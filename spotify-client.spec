@@ -2,6 +2,7 @@
 # spec file for package spotify
 #
 # Copyright (c) 2012 Marguerite Su, Adam Spiers
+# Copyright (c) 2018 Philip Lanaras
 #
 # All modifications and additions to the file contributed by third parties
 # remain the property of their copyright owners, unless otherwise agreed
@@ -33,6 +34,7 @@ Requires:       libpng12-0
 Recommends:     libmp3lame0
 Recommends:     ffmpeg
 Recommends:     zenity
+BuildRequires:  update-desktop-files
 %endif
 
 # not currently tested on Fedora or Mandriva, but leaving
@@ -141,6 +143,9 @@ fi
 /usr/share/pixmaps/spotify-client.png
 
 %changelog
+* Fri Aug 31 2018 Philip Lanaras <flanaras@outlook.com>
+- add update-desktop-files build dependency
+
 * Sat Jan 05 2013 Adam Spiers <spotify-on-opensuse@adamspiers.org>
 - add README
 
